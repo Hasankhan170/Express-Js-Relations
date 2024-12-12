@@ -9,7 +9,7 @@ const courseSchema = new mongoose.Schema({
         type : Number,
         default : 12
     },
-    enrolledStudent : [
+    enrolledStudents : [
         {
             type : mongoose.Schema.Types.ObjectId,
             ref : "Students"

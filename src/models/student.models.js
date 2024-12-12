@@ -13,6 +13,8 @@ const studentSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "Course"
     }
-})
+   },
+ { timestamps: true  }
+)
 
 export default mongoose.model("Students",studentSchema)
