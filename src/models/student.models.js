@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 
 const studentSchema = new mongoose.Schema({
-    name: {
+    fullName: {
         type: String,
         required: true
     },
@@ -15,4 +15,4 @@ const studentSchema = new mongoose.Schema({
     }
 })
 
-export default mongoose.model("students",studentSchema)
+export default mongoose.model("Students",studentSchema)
