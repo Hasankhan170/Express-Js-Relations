@@ -5,7 +5,7 @@ const studentSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    age: {
+    email: {
         type: Number,
         required: true
     },
@@ -15,4 +15,4 @@ const studentSchema = new mongoose.Schema({
     }
 })
 
-export default mongoose.model("studens",studentSchema)
+export default mongoose.model("students",studentSchema)
